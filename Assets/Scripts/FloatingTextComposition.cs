@@ -6,7 +6,7 @@ using UnityEngine;
 public class FloatingTextComposition : MonoBehaviour
 {
     float textDestroySeconds = 1.1f;
-    Vector3 offSet;
+    private Vector3 offSet;
 
 
     public void ShowDamage(string text, GameObject floatingTextPrefab)
