@@ -14,10 +14,9 @@ public class FloatingTextComposition : MonoBehaviour
         offSet = new Vector3(0f, 2f, 0);
         if (floatingTextPrefab)
         {
-            GameObject prefab = Instantiate(floatingTextPrefab, transform.position , Quaternion.identity);
+            GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
             prefab.GetComponentInChildren<TextMesh>().text = text;
             Destroy(prefab, textDestroySeconds);
         }
     }
-
 }
